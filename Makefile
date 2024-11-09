@@ -42,6 +42,8 @@ TEST_KM_S=yes
 # Automated setup: try hard to find the main tex file and recognize its format: PDF figure, BibTeX...
 #
 
+SHELL := /usr/bin/env bash
+
 # manually exclude some tex filenames from consideration
 ALL_TEXFILES_FOR_GRAMMAR_CHECK := $(shell ls *.tex | grep -v -e 'aassymbols.tex' -e '_backup' -e '_BACKUP' -e '_BASE' -e '_LOCAL' -e '_REMOTE')
 
